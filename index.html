@@ -146,5 +146,49 @@
         </a>
       </section>
     </footer>
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="form-label">Дата заезда:
+            <input class="form-input-date" type="text" name="arrival-date" value="27 апреля 2020" required>
+          </label>
+          <button class="calendar-button" type="button">
+            <span class="visually-hidden">Открыть календарь</span>
+          </button>
+          <p class="form-message-error">Мы не можем отправить вас в прошлое.</p>
+          <label class="form-label">Дата выезда:
+            <input class="form-input-date" type="text" name="departure-date" value="1 сентября 2023" required>
+          </label>
+          <button class="calendar-button" type="button">
+            <span class="visually-hidden">Открыть календарь</span>
+          </button>
+          <p class="form-message">На эти даты есть свободные номера. Пока есть.</p>
+          <label class="form-label" for="adult-number">Взрослые: </label>
+          <button class="control-button-less" type="button">
+            <span class="visually-hidden">Уменьшить количество взрослых</span>
+          </button>
+          <input type="text" class="form-input-number" id="adult-number" name="adult-number" value="2" required>
+          <button class="control-button-more" type="button">
+            <span class="visually-hidden">Увеличить количество взрослых</span>
+          </button>
+          <label class="form-label" for="children-number">Дети: </label>
+          <button class="info-button" type="button">
+            <span class="visually-hidden">Разъяснение по заполнению ячейки Дети</span>
+          </button>
+          <button class="control-button-less" type="button">
+            <span class="visually-hidden">Уменьшить количество детей</span>
+          </button>
+          <input type="text" class="form-input-number" id="children-number" name="children-number" value="2" required>
+          <button class="control-button-more" type="button">
+            <span class="visually-hidden">Увеличить количество детей</span>
+          </button>
+          <button class="form-submit-button">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
