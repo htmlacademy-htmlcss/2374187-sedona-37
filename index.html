@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
         <nav class="navigation">
             <a class="navigation-logo" href="#">
                 <img class="page-header-logo" src="#" alt="Герб города Седона.">
@@ -39,13 +39,13 @@
             </ul>
         </nav>
     </header>
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <h1 class="visually-hidden">Неофициальный сайт города Седона</h1>
-      <section class="welcome">
+      <section class="welcome" data-test="hero">
         <h2 class="visually-hidden">Приглашение посетить город</h2>
         <img class="welcome-text" src="#" alt="Добро пожаловать в Седону.">
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества города</h2>
         <div class="advantages-textbox text-container">
           <p class="capitalize-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -97,7 +97,7 @@
           </li>
         </ul>
       </section>
-      <section class="hotel-search">
+      <section class="hotel-search" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <div class="hotel-search-textbox text-container">
           <p class="capitalize-text">Заинтересовались?</p>
@@ -105,7 +105,7 @@
         </div>
         <a class="hotel-search-link button" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="newsletter">
+      <section class="newsletter" data-test="subscribe">
         <h2 class="visually-hidden">Подписка на новостную рассылку</h2>
         <div class="newsletter-textbox text-container">
           <p class="capitalize-text">Подпишитесь на рассылку</p>
@@ -118,7 +118,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="page-footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="footer-social-list">

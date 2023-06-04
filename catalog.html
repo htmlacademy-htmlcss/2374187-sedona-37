@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона: Гостиницы</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
         <nav class="navigation">
             <a class="navigation-logo" href="index.html">
                 <img class="page-header-logo" src="#" alt="Герб города Седона.">
@@ -39,7 +39,7 @@
             </ul>
         </nav>
     </header>
-    <main class="main-catalog">
+    <main class="main-catalog" data-test="main">
       <header class="main-catalog-header">
         <h1 class="main-catalog-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -50,7 +50,7 @@
             <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <section class="catalog-filter">
+        <section class="catalog-filter" data-test="filter">
           <h2 class="visually-hidden">Фильтры для выбора гостиниц</h2>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
@@ -124,7 +124,7 @@
           </form>
         </section>
       </header>
-      <section class="catalog-hotels">
+      <section class="catalog-hotels" data-test="catalog">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="catalog-options">
           <p class="catalog-counter">Найдено гостиниц: <span class="catalog-counter-result">38</span></p>
@@ -196,7 +196,7 @@
           <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
         </ul>
       </section>
-      <section class="newsletter-catalog">
+      <section class="newsletter-catalog" data-test="subscribe">
         <h2 class="visually-hidden">Подписка на новостную рассылку</h2>
         <div class="newsletter-textbox text-container">
           <p class="capitalize-text">Подпишитесь на рассылку</p>
@@ -209,7 +209,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="page-footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="footer-social-list">
