@@ -5,8 +5,190 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="page-header">
+        <nav class="navigation">
+            <a class="navigation-logo" href="#">
+                <img class="page-header-logo" src="#" alt="Герб города Седона.">
+            </a>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a class="navigation-link navigation-link-current" href="#">Главная</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">О Седоне</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="catalog.html">Гостиницы</a>
+                </li>
+            </ul>
+            <ul class="navigation-list navigation-user">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">
+                    <span class="visually-hidden">Поиск по сайту</span>
+                  </a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">
+                    <span class="visually-hidden">Добавить в избранное</span>
+                    <span class="favorite-counter">12</span>
+                  </a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link button" href="#">Хочу сюда!</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-index">
+      <h1 class="visually-hidden">Неофициальный сайт города Седона</h1>
+      <section class="welcome">
+        <h2 class="visually-hidden">Приглашение посетить город</h2>
+        <img class="welcome-text" src="#" alt="Добро пожаловать в Седону.">
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества города</h2>
+        <div class="advantages-textbox text-container">
+          <p class="capitalize-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="plain-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-title">Настоящий городок</h3>
+            <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="advantages-image" src="#" alt="Городская панорама.">
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Небольшая площадь</h3>
+            <p class="advantages-text">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Красивая дорога</h3>
+            <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Мало туристов</h3>
+            <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="advantages-item">
+            <img class="advantages-image" src="#" alt="Мост дьявола.">
+            <h3 class="advantages-title">Там есть мост дьявола</h3>
+            <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+        </ul>
+      </section>
+      <section class="services">
+        <h2 class="visually-hidden">Предлагаемые услуги</h2>
+        <div class="services-textbox text-container">
+          <p class="capitalize-text">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p class="plain-text">Опытный персонал и качественное обслуживание!</p>
+        </div>
+        <ul class="services-list">
+          <li class="services-item">
+            <h3 class="services-title">Жильё</h3>
+            <p class="services-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="services-item">
+            <h3 class="services-title">Еда</h3>
+            <p class="services-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="services-item">
+            <h3 class="services-title">Сувениры</h3>
+            <p class="services-text">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="hotel-search">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <div class="hotel-search-textbox text-container">
+          <p class="capitalize-text">Заинтересовались?</p>
+          <p class="plain-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <a class="hotel-search-link button" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <section class="newsletter">
+        <h2 class="visually-hidden">Подписка на новостную рассылку</h2>
+        <div class="newsletter-textbox text-container">
+          <p class="capitalize-text">Подпишитесь на рассылку</p>
+          <p class="plain-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        </div>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-email" class="visually-hidden">Email</label>
+          <input class="newsletter-form-field" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
+          <button class="newsletter-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <address class="footer-contacts-address">
+          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+        <a class="footer-logo-link" href="https://htmlacademy.ru/">
+          <img class="footer-logo-image" src="#" alt="Логотип HTML Academy.">
+        </a>
+      </section>
+    </footer>
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="form-label">Дата заезда:
+            <input class="form-input-date" type="text" name="arrival-date" value="27 апреля 2020" required>
+          </label>
+          <button class="calendar-button" type="button">
+            <span class="visually-hidden">Открыть календарь</span>
+          </button>
+          <p class="form-message-error">Мы не можем отправить вас в прошлое.</p>
+          <label class="form-label">Дата выезда:
+            <input class="form-input-date" type="text" name="departure-date" value="1 сентября 2023" required>
+          </label>
+          <button class="calendar-button" type="button">
+            <span class="visually-hidden">Открыть календарь</span>
+          </button>
+          <p class="form-message">На эти даты есть свободные номера. Пока есть.</p>
+          <label class="form-label" for="adult-number">Взрослые: </label>
+          <button class="control-button-less" type="button">
+            <span class="visually-hidden">Уменьшить количество взрослых</span>
+          </button>
+          <input type="text" class="form-input-number" id="adult-number" name="adult-number" value="2" required>
+          <button class="control-button-more" type="button">
+            <span class="visually-hidden">Увеличить количество взрослых</span>
+          </button>
+          <label class="form-label" for="children-number">Дети: </label>
+          <button class="info-button" type="button">
+            <span class="visually-hidden">Разъяснение по заполнению ячейки Дети</span>
+          </button>
+          <button class="control-button-less" type="button">
+            <span class="visually-hidden">Уменьшить количество детей</span>
+          </button>
+          <input type="text" class="form-input-number" id="children-number" name="children-number" value="2" required>
+          <button class="control-button-more" type="button">
+            <span class="visually-hidden">Увеличить количество детей</span>
+          </button>
+          <button class="form-submit-button">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
