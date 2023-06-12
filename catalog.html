@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона: Гостиницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
@@ -34,7 +35,7 @@
                   </a>
                 </li>
                 <li class="navigation-item">
-                  <a class="navigation-link-button" href="#">
+                  <a class="navigation-link" href="#">
                     <span class="button">Хочу сюда!</span>
                   </a>
                 </li>
@@ -102,11 +103,11 @@
               <ul class="catalog-filter-group">
                 <li class="catalog-filter-item">
                   <input class="control-input" id="min-cost" type="number" name="min-cost" min="0" max="12000" value="0">
-                  <label for="min-cost">от</label>
+                  <label class="cost-control" for="min-cost">от</label>
                 </li>
                 <li class="catalog-filter-item">
                   <input class="control-input" id="max-cost" type="number" name="max-cost" min="0" max="12000" value="9000">
-                  <label for="max-cost">до</label>
+                  <label class="cost-control" for="max-cost">до</label>
                 </li>
               </ul>
               <div class="range-container">
@@ -122,8 +123,8 @@
               </div>
             </fieldset>
             <div class="catalog-filter-buttons">
-              <button class="button" type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <button class="filter-button button" type="submit">Применить</button>
+              <button class="filter-button button" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -141,7 +142,7 @@
           </select>
           <ul class="catalog-view-list">
             <li class="catalog-view-item">
-              <a class="view-button-current" href="#">
+              <a class="view-button view-button-current" href="#">
                 <span class="visually-hidden">Показать карточки.</span>
               </a>
             </li>
@@ -237,7 +238,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link pagination-link-dotted" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
