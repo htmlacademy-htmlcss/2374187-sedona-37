@@ -279,3 +279,50 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+
+.modal {
+  background-color: #ffffff;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.form-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.form-input-date {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.form-input-number {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+.form-message {
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+.form-message-error {
+  color: #FF5757;
+}
+.form-submit-button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #83b3d3;
+}
