@@ -11,6 +11,7 @@
     <div class="page-container">
       <header class="page-header" data-test="header">
         <div class="page-header-container">
+          <!-- Блок навигации -->
           <nav class="navigation">
             <a class="navigation-logo" href="index.html">
               <img class="page-header-logo" src="images/logo.svg" alt="Герб города Седона." width="140" height="70">
@@ -51,6 +52,7 @@
         <header class="main-catalog-header">
           <div class="main-catalog-container">
             <h1 class="main-catalog-header-title">Гостиницы Седоны</h1>
+            <!-- Хлебные крошки -->
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
@@ -61,6 +63,7 @@
                 <a class="breadcrumbs-link" href="#">Гостиницы</a>
               </li>
             </ol>
+            <!-- Блок фильтров -->
             <section class="catalog-filter" data-test="filter">
               <h2 class="visually-hidden">Фильтры для выбора гостиниц.</h2>
               <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -121,6 +124,7 @@
                         <label class="cost-control" for="max-cost">до</label>
                       </li>
                     </ul>
+                    <!-- Блок ползунков -->
                     <div class="range-container">
                       <div class="range-scale">
                         <div class="range"></div>
@@ -145,6 +149,7 @@
         <div class="main-catalog-container">
           <section class="catalog-hotels" data-test="catalog">
             <h2 class="visually-hidden">Результаты поиска.</h2>
+            <!-- Блок сотрировки результатов поиска и вид представления -->
             <div class="catalog-options">
               <p class="catalog-counter">Найдено гостиниц:
                 <span class="catalog-counter-result">38</span>
@@ -172,101 +177,80 @@
                 </li>
               </ul>
             </div>
+            <!-- Блок карточек гостиниц -->
             <ul class="hotel-list">
               <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
+                <a class="hotel-card-image-link" href="#">
                   <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" alt="Вид из пещеры на зведное небо."
                     width="300" height="212">
                 </a>
-                <a class="hotel-card-link" href="#">
+                <a class="hotel-card-title-link" href="#">
                   <h3 class="hotel-card-title">Amara Resort &amp; Spa</h3>
                 </a>
-                <div class="type-price-container">
-                  <p class="hotel-card-type">Гостиница</p>
-                  <p class="product-card-price">От 4000 ₽</p>
-                </div>
-                <div class="card-buttons-container">
-                  <a class="product-card-button button" href="#">подробнее</a>
-                  <a class="add-favorite-button button" href="#">в избранное</a>
-                </div>
-                <div class="rating-container">
-                  <p class="product-card-stars product-card-stars-4">
-                    <span class="visually-hidden">4 звезды.</span>
-                  </p>
-                  <p class="product-card-rating">Рейтинг: <span>8,5</span></p>
-                </div>
+                <p class="hotel-card-type">Гостиница</p>
+                <p class="product-card-price">От 4000 ₽</p>
+                <a class="product-card-button button" href="#">подробнее</a>
+                <a class="add-favorite-button button" href="#">в избранное</a>
+                <p class="product-card-stars product-card-stars-4">
+                  <span class="visually-hidden">4 звезды.</span>
+                </p>
+                <p class="product-card-rating">Рейтинг: <span>8,5</span></p>
+
               </li>
               <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
+                <a class="hotel-card-image-link" href="#">
                   <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" alt="Радуга над скалой." width="300"
                     height="212">
                 </a>
-                <a class="hotel-card-link" href="#">
+                <a class="hotel-card-title-link" href="#">
                   <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                 </a>
-                <div class="type-price-container">
-                  <p class="hotel-card-type">Гостиница</p>
-                  <p class="product-card-price">От 5000 ₽</p>
-                </div>
-                <div class="card-buttons-container">
-                  <a class="product-card-button button" href="#">подробнее</a>
-                  <a class="favorite-button button" href="#">в избранном</a>
-                </div>
-                <div class="rating-container">
-                  <p class="product-card-stars product-card-stars-4">
-                    <span class="visually-hidden">4 звезды.</span>
-                  </p>
-                  <p class="product-card-rating">Рейтинг: <span>9,2</span></p>
-                </div>
+                <p class="hotel-card-type">Гостиница</p>
+                <p class="product-card-price">От 5000 ₽</p>
+                <a class="product-card-button button" href="#">подробнее</a>
+                <a class="favorite-button button" href="#">в избранном</a>
+                <p class="product-card-stars product-card-stars-4">
+                  <span class="visually-hidden">4 звезды.</span>
+                </p>
+                <p class="product-card-rating">Рейтинг: <span>9,2</span></p>
               </li>
               <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
+                <a class="hotel-card-image-link" href="#">
                   <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" alt="Скала на фоне голубого неба."
                     width="300" height="212">
                 </a>
-                <a class="hotel-card-link" href="#">
+                <a class="hotel-card-title-link" href="#">
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
                 </a>
-                <div class="type-price-container">
-                  <p class="hotel-card-type">Гостиница</p>
-                  <p class="product-card-price">От 2500 ₽</p>
-                </div>
-                <div class="card-buttons-container">
-                  <a class="product-card-button button" href="#">подробнее</a>
-                  <a class="add-favorite-button button" href="#">в избранное</a>
-                </div>
-                <div class="rating-container">
-                  <p class="product-card-stars product-card-stars-3">
-                    <span class="visually-hidden">3 звезды.</span>
-                  </p>
-                  <p class="product-card-rating">Рейтинг: <span>6,9</span></p>
-                </div>
+                <p class="hotel-card-type">Гостиница</p>
+                <p class="product-card-price">От 2500 ₽</p>
+                <a class="product-card-button button" href="#">подробнее</a>
+                <a class="add-favorite-button button" href="#">в избранное</a>
+                <p class="product-card-stars product-card-stars-3">
+                  <span class="visually-hidden">3 звезды.</span>
+                </p>
+                <p class="product-card-rating">Рейтинг: <span>6,9</span></p>
               </li>
               <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
+                <a class="hotel-card-image-link" href="#">
                   <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" alt="Скала на фоне звездного неба."
                     width="300" height="212">
                 </a>
-                <a class="hotel-card-link" href="#">
+                <a class="hotel-card-title-link" href="#">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
                 </a>
-                <div class="type-price-container">
-                  <p class="hotel-card-type">Гостиница</p>
-                  <p class="product-card-price">От 1500 ₽</p>
-                </div>
-                <div class="card-buttons-container">
-                  <a class="product-card-button button" href="#">подробнее</a>
-                  <a class="add-favorite-button button" href="#">в избранное</a>
-                </div>
-                <div class="rating-container">
-                  <p class="product-card-stars product-card-stars-2">
-                    <span class="visually-hidden">2 звезды.</span>
-                  </p>
-                  <p class="product-card-rating">Рейтинг: <span>5,0</span></p>
-                </div>
+                <p class="hotel-card-type">Гостиница</p>
+                <p class="product-card-price">От 1500 ₽</p>
+                <a class="product-card-button button" href="#">подробнее</a>
+                <a class="add-favorite-button button" href="#">в избранное</a>
+                <p class="product-card-stars product-card-stars-2">
+                  <span class="visually-hidden">2 звезды.</span>
+                </p>
+                <p class="product-card-rating">Рейтинг: <span>5,0</span></p>
               </li>
             </ul>
             <div class="separator"></div>
+            <!-- Пагинация -->
             <ol class="pagination">
               <li class="pagination-item">
                 <a class="pagination-link pagination-link-current" href="#">1</a>
@@ -291,6 +275,7 @@
         </div>
       </main>
       <footer class="page-footer" data-test="footer">
+        <!-- Подписка на рассылку -->
         <section class="newsletter-catalog" data-test="subscribe">
           <h2 class="visually-hidden">Подписка на новостную рассылку.</h2>
           <div class="newsletter-textbox text-container">
@@ -304,8 +289,9 @@
             <button class="newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
-        <section class="page-footer-contacts">
-          <div class="footer-contacts-container">
+        <div class="footer-contacts-container">
+          <!-- Блок Контакты в футере -->
+          <section class="page-footer-contacts">
             <h2 class="visually-hidden">Контакты.</h2>
             <ul class="footer-social-list">
               <li class="footer-social-item">
@@ -354,8 +340,8 @@
                 </defs>
               </svg>
             </a>
-          </div>
-        </section>
+          </section>
+        </div>
       </footer>
     </div>
   </body>
