@@ -462,7 +462,7 @@ body {
 .newsletter-form-field {
   border: 0;
   border-radius: 4px 0 0 4px;
-  padding: 15px 10px 13px 20px;
+  padding: 15px 20px 13px 20px;
   background-color: #f2f2f2;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
@@ -736,7 +736,71 @@ body {
   position: relative;
 }
 
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus .control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control:hover .control-label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.control:active .control-label {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/forms/checked.svg");
+  background-repeat: no-repeat;
+  background-position: left 4px top 6px;
+  background-size: 13px 10px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  background-color: #3f5e72;
+
+}
+
+.control-label {
+  display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -749,32 +813,53 @@ body {
   margin-bottom: 36px;
 }
 
+.cost-control {
+  position: relative;
+}
+
 .cost-input {
   width: 143px;
   height: 48px;
-  padding-left: 20px;
+  padding: 12px 40px 12px 20px;
   border: 0;
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;
   box-sizing: border-box;
-}
-
-.cost-control {
-  position: absolute;
-  top: 12px;
-  right: 20px;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: right;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.cost-input {
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   align-items: center;
   color: #000000;
+  background-color: #f2f2f2;
+}
+
+.cost-input[name="max-cost"] {
+  border-radius: 0 4px 4px 0;
+}
+
+.cost-input::-webkit-outer-spin-button,
+.cost-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.cost-input:hover {
+  background-color: #e6e6e6;
+}
+
+.cost-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.cost-label {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .range-container {
@@ -795,10 +880,8 @@ body {
 
 .range {
   position: absolute;
-  width: 226px;
   height: 1px;
   border-top: 4px solid #ffffff;
-  left: 0;
   top: -4px;
   z-index: 5;
 }
@@ -814,6 +897,20 @@ body {
   border: none;
   cursor: pointer;
   z-index: 10;
+}
+
+.range-handle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-handle:focus {
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-handle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
 .range-handle-min {
@@ -884,7 +981,7 @@ body {
 .catalog-options {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .catalog-counter {
@@ -904,13 +1001,30 @@ body {
   margin-right: 70px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  padding-left: 15px;
+  padding-left: 18px;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-image: url("../images/forms/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 17px center;
+  appearance: none;
+}
+
+.select-control:hover {
+  border-color: #68a2ca;
+}
+
+.select-control:focus {
+  border-color: #68a2ca;
+}
+
+.select-control:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-view-list {
@@ -979,7 +1093,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 80px;
+  margin-bottom: 81px;
 }
 
 /* Карточка гостиницы */
@@ -1220,11 +1334,30 @@ body {
   border-radius: 50%;
   padding: 0;
   background-color: #f2f2f2;
-  background-image: url("../images/modal/cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 14px 14px;
   cursor: pointer;
+}
+
+.modal-close-icon {
+  padding-left: 2px;
+  padding-top: 6px;
+  fill: #000000;
+}
+
+.modal-close:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.modal-close:active {
+  background-color: #e6e6e6;
+}
+
+.modal-close:active .modal-close-icon {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .modal-form {
@@ -1237,7 +1370,7 @@ body {
 .modal-form-departure {
   position: relative;
   display: grid;
-  grid-template-columns: auto 380px 60px;
+  grid-template-columns: auto 440px;
   align-items: center;
 }
 
@@ -1250,12 +1383,11 @@ body {
 }
 
 .form-input-date {
-  width: 380px;
+  width: 440px;
   height: 48px;
-  padding: 0;
   border: none;
-  border-radius: 4px 0 0 4px;
-  padding-left: 20px;
+  border-radius: 4px;
+  padding: 13px 50px 11px 20px;
   background-color: #f2f2f2;
   font-family: inherit;
   font-weight: 700;
@@ -1265,12 +1397,27 @@ body {
   box-sizing: border-box;
 }
 
+.form-input-date:hover,
+.form-input-date:focus,
+.form-input-number:hover,
+.form-input-number:focus {
+  background-color: #e6e6e6;
+}
+
+.form-input-date:focus,
+.form-input-number:focus {
+  outline: 3px solid #83b3d3;
+}
+
 .calendar-button {
-  width: 60px;
-  height: 48px;
+  position: absolute;
+  min-width: 20px;
+  min-height: 20px;
   padding: 0;
   border: none;
-  background-color: #f2f2f2;
+  top: 14px;
+  right: 20px;
+  background-color: transparent;
   background-image: url("../images/modal/date.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1298,24 +1445,26 @@ body {
 }
 
 .modal-form-adult-number {
+  position: relative;
   display: grid;
-  grid-template-columns: auto 40px 31px 40px;
+  grid-template-columns: auto 110px;
   align-items: center;
 }
 
 .modal-form-children-number {
   position: relative;
   display: grid;
-  grid-template-columns: auto 40px 31px 40px;
+  grid-template-columns: auto 110px;
   align-items: center;
 }
 
 .form-input-number {
-  width: 31px;
+  width: 110px;
   height: 48px;
   border: none;
-  padding: 0;
-  border-radius: 0;
+  padding: 14px 35px;
+  border-radius: 4px;
+  box-sizing: border-box;
   background-color: #f2f2f2;
   font-family: inherit;
   font-weight: 700;
@@ -1327,28 +1476,55 @@ body {
 
 .control-button-less,
 .control-button-more {
-  width: 40px;
-  height: 48px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
   padding: 0;
   border: none;
-  background-color: #f2f2f2;
+  border-radius: 4px;
+  background-color: transparent;
+  box-sizing: border-box;
   cursor: pointer;
 }
 
 .control-button-less {
-  border-radius: 4px 0 0 4px;
-  background-image: url("../images/modal/button-minus.svg");
+  top: 14px;
+  right: 80px;
+  /* background-image: url("../images/modal/button-minus.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px 20px;
+  background-size: 20px 20px; */
 }
 
 .control-button-more {
-  border-radius: 0 4px 4px 0;
-  background-image: url("../images/modal/button-plus.svg");
+  top: 14px;
+  right: 10px;
+  /* background-image: url("../images/modal/button-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px 20px;
+  background-size: 20px 20px; */
+}
+
+.less-icon,
+.more-icon {
+  fill: rgba(117, 97, 87, 0.3)
+}
+
+.control-button-less:hover .less-icon,
+.control-button-less:focus .less-icon,
+.control-button-more:hover .more-icon,
+.control-button-more:focus .more-icon {
+  fill: #000000;
+}
+
+.control-button-less:focus,
+.control-button-more:focus {
+  outline: 3px solid #82B3D3;
+}
+
+.control-button-less:active .less-icon,
+.control-button-more:active .more-icon {
+  fill: rgba(117, 97, 87, 0.3)
 }
 
 .info-button {
@@ -1373,8 +1549,10 @@ body {
   font-family: inherit;
   font-size: 20px;
   line-height: 24px;
+  border-radius: 10px;
   background-color: #83b3d3;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .form-submit-button:hover {
