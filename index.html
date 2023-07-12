@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon-32x32.png">
   </head>
 
   <body>
@@ -211,64 +212,74 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-form-arrival">
               <label class="form-label" for="arrival-date">Дата заезда:</label>
-              <input class="form-input-date" id="arrival-date" type="text" name="arrival-date" value="27 апреля 2020"
-                required>
-              <button class="calendar-button" type="button">
-                <span class="visually-hidden">Открыть календарь</span>
-              </button>
-              <p class="form-message form-message-error">Мы не можем отправить вас в прошлое.</p>
+              <div class="input-wrapper">
+                <input class="form-input-date" id="arrival-date" type="text" name="arrival-date" value="27 апреля 2020"
+                  required>
+                <button class="calendar-button" type="button">
+                  <span class="visually-hidden">Открыть календарь</span>
+                </button>
+                <p class="form-message form-message-error">Мы не можем отправить вас в прошлое.</p>
+              </div>
             </div>
             <div class="modal-form-departure">
               <label class="form-label" for="departure-date">Дата выезда:</label>
-              <input class="form-input-date" id="departure-date" type="text" name="departure-date"
-                value="1 сентября 2023" required>
-              <button class="calendar-button" type="button">
-                <span class="visually-hidden">Открыть календарь</span>
-              </button>
-              <p class="form-message">На эти даты есть свободные номера. Пока есть.</p>
+              <div class="input-wrapper">
+                <input class="form-input-date" id="departure-date" type="text" name="departure-date"
+                  value="1 сентября 2023" required>
+                <button class="calendar-button" type="button">
+                  <span class="visually-hidden">Открыть календарь</span>
+                </button>
+                <p class="form-message">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
             </div>
             <div class="modal-form-guests-number">
               <div class="modal-form-adult-number">
                 <label class="form-label" for="adult-number">Взрослые: </label>
                 <button class="control-button-less" type="button">
-                  <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                    viewBox="0 0 20 20">
                     <path d="M3 9v2h14V9H3Z" />
                   </svg>
                   <span class="visually-hidden">Уменьшить количество взрослых</span>
                 </button>
                 <input class="form-input-number" type="text" id="adult-number" name="adult-number" value="2" required>
                 <button class="control-button-more" type="button">
-                  <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                    viewBox="0 0 20 20">
                     <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
                   <span class="visually-hidden">Увеличить количество взрослых</span>
                 </button>
               </div>
               <div class="modal-form-children-number">
-                <label class="form-label" for="children-number">Дети: </label>
-                <button class="info-button" type="button" aria-labelledby="tooltip-label">
-                  <span class="visually-hidden">Разъяснение по заполнению ячейки Дети</span>
-                </button>
+                <span class="form-label form-label-icon">
+                  <label class="form-label" for="children-number">Дети: </label>
+                  <span class="tooltip">
+                    <button class="info-button" type="button" aria-labelledby="tooltip-label">
+                      <span class="visually-hidden">Разъяснение по заполнению ячейки Дети</span>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.
+                    </span>
+                  </span>
+                </span>
                 <button class="control-button-less" type="button">
-                  <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                    viewBox="0 0 20 20">
                     <path d="M3 9v2h14V9H3Z" />
                   </svg>
                   <span class="visually-hidden">Уменьшить количество детей</span>
                 </button>
-                <input class="form-input-number" type="text" id="children-number" name="children-number" value="2"
+                <input class="form-input-number form-input-children-number" type="text" id="children-number" name="children-number" value="2"
                   required>
                 <button class="control-button-more" type="button">
-                  <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                    viewBox="0 0 20 20">
                     <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
                   <span class="visually-hidden">Увеличить количество детей</span>
                 </button>
-                <div class="tooltip-container">
-                  <div class="tooltip-text" role="tooltip" id="tooltip-label">
-                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-                    размещаются бесплатно.
-                  </div>
-                </div>
               </div>
             </div>
             <button class="form-submit-button button">Найти</button>
