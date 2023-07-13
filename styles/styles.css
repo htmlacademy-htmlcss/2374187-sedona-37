@@ -1015,7 +1015,7 @@ body {
 
 .catalog-options {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 39px;
 }
 
@@ -1028,6 +1028,7 @@ body {
   color: #000000;
   width: 438px;
   margin-right: 100px;
+  padding-top: 7px;
 }
 
 .select-control {
