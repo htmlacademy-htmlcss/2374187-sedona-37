@@ -257,7 +257,7 @@ body {
 
 .advantages-item {
   width: 400px;
-  padding: 112px 85px;
+  padding: 112px 84px;
   box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -877,6 +877,13 @@ body {
   margin: 0;
 }
 
+.cost-input,
+.cost-input:hover,
+.cost-input:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
 .cost-input:hover {
   background-color: #e6e6e6;
 }
@@ -971,11 +978,11 @@ body {
 }
 
 .filter-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .filter-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .filter-button:not(:last-child) {
@@ -1044,6 +1051,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: transparent;
   background-image: url("../images/forms/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 17px center;
@@ -1066,17 +1074,12 @@ body {
 
 .catalog-view-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.catalog-view-item {
-  margin-right: 8px;
-}
-
-.catalog-view-item:last-child {
-  margin-right: 0;
+  width: 160px;
 }
 
 .view-button {
@@ -1099,7 +1102,7 @@ body {
 
 .view-button:focus {
   outline: none;
-  border-color: #68A2CA;
+  border-color: #68a2ca;
 }
 
 .view-button:active {
@@ -1204,11 +1207,11 @@ body {
 }
 
 .add-favorite-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .add-favorite-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .favorite-button {
@@ -1218,11 +1221,11 @@ body {
 }
 
 .favorite-button:hover {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .favorite-button:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .product-card-stars {
@@ -1500,7 +1503,7 @@ body {
 }
 
 .form-message-error {
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .modal-form-guests-number {
@@ -1571,7 +1574,7 @@ body {
 .control-button-less:focus,
 .control-button-more:focus,
 .calendar-button:focus {
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
 }
 
 .control-button-less:active .less-icon,
